@@ -10,8 +10,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  font-family: "Open Sans", "krub", sans-serif;
+  color: #2D405F;
 }
 
 a {
@@ -24,13 +24,43 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
+h1 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 26px;
+}
+
+
 h4,
 h5,
 h6 {
-  font-family: "Krub", sans-serif;
+  font-family: "open sans", sans-serif;
+  font-style: bold ;
+  font-size: 20px;
+}
+
+p {
+font-family: "open sans", sans-serif;
+font-style: normal;
+font-size: 16px;
 }
 
 /*--------------------------------------------------------------
@@ -116,8 +146,8 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #f6f7ff;
-  border-bottom: 2px solid #eceefe;
+  background: #FEEF87;
+  border-bottom: 2px solid #FEEF87;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -134,7 +164,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #2d405f;
+  color: #020305;
 }
 
 #header .logo img {
@@ -193,19 +223,19 @@ h6 {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #e2e5fe;
+  background: #fca37e;
   padding: 9px 25px;
   margin-left: 30px;
   border-radius: 5px;
   font-weight: 600;
-  color: #fff;
-  color: #3b4ef8;
+  color: #ffffff;
+  color: #ffffff;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #3b4ef8;
+  background: #ff771d;
 }
 
 .navbar .dropdown ul {
@@ -218,8 +248,8 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgb(127, 137, 161);
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -400,25 +430,27 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 56px;
-  color: #141d2b;
+  color: #2D405F;
   width: 60%;
-  color: #2d405f;
+  color: #3b4ef8;
+  padding-top: 60px;
 }
 
-#hero h2 {
+#hero h4 {
   color: #466393;
   margin: 15px 0 0 0;
-  font-size: 24px;
+  font-size: 20px;
   color: #2d405f;
+  padding-top: 20px;
 }
 
 #hero .btn-get-started {
   font-family: "Krub", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 26px;
   letter-spacing: 1px;
   display: block;
   padding: 8px 32px 10px 32px;
@@ -426,11 +458,11 @@ h6 {
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: #3b4ef8;
+  background: #F97D49;
 }
 
 #hero .btn-get-started:hover {
-  background: #0a22f6;
+  background: hsl(22, 100%, 53%);
 }
 
 #hero .hero-img {
@@ -445,7 +477,7 @@ h6 {
     width: 100%;
   }
 
-  #hero h2 {
+  #hero h4 {
     font-size: 20px;
     line-height: 24px;
   }
@@ -469,9 +501,16 @@ section {
   overflow: hidden;
 }
 
+/*--
 .section-bg {
-  background-color: #f6f8fb;
-}
+  background-color: #e6f3f4;
+  background-image: url("/assets/img/background/background-2.png");
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  width: 1350px;
+}*/
+
 
 .section-title {
   text-align: center;
@@ -482,7 +521,7 @@ section {
   font-size: 32px;
   font-weight: bold;
   padding-top: 20px;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -495,7 +534,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #aabbd7;
+  background: #ff771d;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -504,15 +543,23 @@ section {
   margin-bottom: 0;
 }
 
+.section-title h4 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 20px;
+  position: relative;
+  color: #2d405f;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
-  background: #466393;
+  background: #fff9e1;
   background-size: cover;
-  padding: 60px 0;
+  padding: 80px 0;
   position: relative;
-  color: #fff;
+  color: #2D405F;
 }
 
 .about .content {
@@ -522,7 +569,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 34px;
-  color: #fff;
+  color: #2D405F;
   margin-bottom: 30px;
 }
 
@@ -532,11 +579,12 @@ section {
 
 .about .content .about-btn {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(255, 163, 76);
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 50px;
   transition: 0.3s;
+  margin-top: 140px;
 }
 
 .about .content .about-btn i {
@@ -544,7 +592,7 @@ section {
 }
 
 .about .content .about-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255, 138, 29);
 }
 
 .about .icon-boxes .icon-box {
@@ -583,7 +631,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #f6f7ff;
+  background: #FEEF87;
   padding: 15px 0;
   text-align: center;
 }
@@ -611,6 +659,7 @@ section {
 .features .content+.content {
   margin-top: 30px;
   padding-bottom: 60px;
+  padding-right: 0px;
 }
 
 .features .content h3 {
@@ -625,6 +674,7 @@ section {
 
 .features .content ul li {
   padding-bottom: 0px;
+  padding-right: 10px;
 }
 
 .features .content ul i {
@@ -635,6 +685,15 @@ section {
 
 .features .content p:last-child {
   margin-bottom: 100;
+  padding-right: 60px;
+  padding-left: 0px;
+}
+
+.features .content h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #2D405F;
+  margin-bottom: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -659,6 +718,7 @@ section {
   width: 941px;
   padding: 40px 40px 0px 40px;
   border-bottom-width: 1px;
+  background: #3b4ef8;
 }
 
 .steps .content-item span {
@@ -669,7 +729,7 @@ section {
 }
 
 .steps .content-item h4 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
   padding: 0;
   margin: 55px 38;
@@ -678,11 +738,12 @@ section {
 
 .steps .content-item h3 {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 700;
   padding: 0;
   margin: 55px 38;
   color: #2d405f;
-  width: 900px;
+  width: 950px;
+  text-align: center;
 }
 
 .steps .content-item p {
@@ -713,17 +774,18 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
-  background: #2d405f;
+  background: #fff9e1;
+  background-image: url("/assets/img/background/background-1.png");
   padding-bottom: 80px;
 }
 
 .services .section-title h2,
 .services .section-title p {
-  color: #fff;
+  color: #2D405F;
 }
 
 .services .section-title h2::after {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(255, 159, 33);
 }
 
 .services .icon-box {
@@ -966,6 +1028,14 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  background-image: url(/assets/img/background/background-2.png);
+  padding: 50px;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -985,7 +1055,7 @@ section {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid #4e44da;
   margin: 0 auto;
 }
 
@@ -993,7 +1063,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #111
 }
 
 .testimonials .testimonial-item h4 {
@@ -1044,101 +1114,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# centro
---------------------------------------------------------------*/
-.centro {
-  background: #fff;
-  padding: 60px 0;
-}
-
-.centro .member {
-  text-align: center;
-  margin-bottom: 20px;
-  background: #343a40;
-  position: relative;
-  overflow: hidden;
-}
-
-.centro .member .member-info {
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: 0.2s;
-}
-
-.centro .member .member-info-content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 10px;
-  transition: bottom 0.4s;
-}
-
-.centro .member .member-info-content h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  color: #fff;
-}
-
-.centro .member .member-info-content span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-  color: #fff;
-}
-
-.centro .member .social {
-  position: absolute;
-  left: 0;
-  bottom: -38px;
-  right: 0;
-  height: 48px;
-  transition: bottom ease-in-out 0.4s;
-  text-align: center;
-}
-
-.centro .member .social a {
-  transition: color 0.3s;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.centro .member .social a:hover {
-  color: #fff;
-}
-
-.centro .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.centro .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(12, 17, 26, 0.9) 0%, rgba(20, 29, 43, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
-  opacity: 1;
-  transition: 0.4s;
-}
-
-.centro .member:hover .member-info-content {
-  bottom: 60px;
-  transition: bottom 0.4s;
-}
-
-.centro .member:hover .social {
-  bottom: 0;
-  transition: bottom ease-in-out 0.4s;
-}
-
-/*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background-color: #fff9e1;
   padding: 60px 0;
+  
 }
 
 .team .member {
@@ -1223,11 +1204,23 @@ section {
   transition: bottom ease-in-out 0.4s;
 }
 
-
-
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+.pricing {
+  background-image: url(/assets/img/background/background-3.png);
+  padding: 20px;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.pricing .content h2 { 
+  font-weight: 700;
+  padding-top: 20px;
+  font-size: 32px;
+  color: #fff;
+}
+
 .pricing .box {
   padding: 20px;
   background: #fff;
@@ -1238,20 +1231,20 @@ section {
 }
 
 .pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  font-size: 18px;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 0;
+  font-size: 26px;
   text-transform: uppercase;
-  font-weight: 600;
   color: #2d405f;
 }
 
 .pricing .box h4 {
-  font-size: 42px;
+  font-size: 48px;
   color: #3b4ef8;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
+  font-family: "Fraunces", sans-serif;
+  margin-bottom: 5px;
 }
 
 .pricing .box h4 sup {
@@ -1272,7 +1265,7 @@ section {
   color: #2d405f;
   text-align: center;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .pricing .box ul li {
@@ -1280,7 +1273,7 @@ section {
 }
 
 .pricing .box ul i {
-  color: #3b4ef8;
+  color: #ffffff;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1296,8 +1289,8 @@ section {
 }
 
 .pricing .box .btn-buy {
-  background: #eceefe;
-  color: #3b4ef8;
+  background: #fca37e;
+  color: #ffffff;
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 5px;
@@ -1310,12 +1303,12 @@ section {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #3b4ef8;
+  background: #ff771d;
   color: #fff;
 }
 
 .pricing .featured {
-  background: #466393;
+  background: #ff8800;
   box-shadow: none;
 }
 
@@ -1328,13 +1321,13 @@ section {
 }
 
 .pricing .featured .btn-buy {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.808);
+  color: #ff771d;
 }
 
 .pricing .featured .btn-buy:hover {
   background: #fff;
-  color: #4e6fa4;
+  color: #ff771d;
 }
 
 /*--------------------------------------------------------------
@@ -1405,10 +1398,19 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact.section-bg {
+  background-color: #4CA1A6;
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
 .contact .info-box {
   color: #2d405f;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(245, 250, 255, 0.6);
   padding: 20px 0 30px 0;
   background: #fff;
 }
@@ -1431,6 +1433,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: #fff;
 }
 
 .contact .php-email-form {
