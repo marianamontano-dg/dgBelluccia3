@@ -505,7 +505,7 @@ p {
   display: block;
   padding: 8px 32px 10px 32px;
   margin-top: 40px;
-  border-radius: 25px;
+  border-radius: 5px;
   transition: 0.5s;
   color: #fff;
   background: #F97D49;
@@ -635,7 +635,7 @@ section {
 --------------------------------------------------------------*/
 .about {
   background: #fff9e1;
-  background-image: url();
+  background-image: url("/dgBelluccia3/assets/img/background/background-8.png");
   background-size: cover;
   padding: 80px 0;
   position: relative;
@@ -643,7 +643,7 @@ section {
 }
 
 .about .content {
-  padding: 20px 30px 30px 0;
+  padding: 20px 20px 0px 0;
 }
 
 .about .content h3 {
@@ -654,7 +654,8 @@ section {
 }
 
 .about .content p {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding-top: 50px;
 }
 
 .about .content .about-btn {
@@ -664,7 +665,7 @@ section {
   color: #fff;
   border-radius: 50px;
   transition: 0.3s;
-  margin-top: 110px;
+  margin-top: 60px;
 }
 
 .about .content .about-btn i {
@@ -737,6 +738,17 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.features .row.content {
+  display: flex;
+  flex-direction: row-reverse; /* Invertir el orden de los elementos */
+  height: 65vh;
+}
+
+.features .col-md-4 img {
+  width: 520px;
+  height: 300px;
+}
+
 .features .content+.content {
   margin-top: 30px;
   padding-bottom: 60px;
@@ -766,8 +778,27 @@ section {
 }
 
 .features .content h2 {
-  color: #2D405F;
+  color: #5e69ff;
   margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fca37e;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff771d;
 }
 
 /*--------------------------------------------------------------
@@ -775,12 +806,18 @@ section {
 --------------------------------------------------------------*/
 #steps-text {
   background-color: #fff;
+  padding-left: 120px;
 }
 
 #steps-rest{
   padding-bottom: 20px;
+  padding-top: 45px;
   background-color: #5e69ff;
+  background-image: url(/dgBelluccia3/assets/img/background/background-11.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
   width: 100%;
+  height: 30vh;
 }
 
 .steps .row {
@@ -792,13 +829,17 @@ section {
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin: -1px;
+  align-items: center;
+}
+
+#steps-text .steps .section-bg{
+  padding-left: 180px;
 }
 
 #steps-rest .content-item{
   width: 100%;
   padding: 20px 40px 0px 80px;
   border-bottom-width: 1px;
-  background-color: #5e69ff;
   text-align: center;
 
 }
@@ -842,7 +883,7 @@ section {
   height: 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   .steps .content-item {
     padding: 40px 0;
   }
@@ -858,8 +899,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
-  background: #fff9e1;
-  background-image: url("/dgBelluccia3/assets/img/background/background-1.png");
+  background: #5e69ff;
   padding-bottom: 80px;
 }
 
@@ -927,6 +967,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portfolio.portfolio {
+  background-image: url("/dgBelluccia3/assets/img/background/background-7.png");
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -955,7 +999,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #3b4ef8;
+  background: #ff771d;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1116,7 +1160,7 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  background-image: url(/dgBelluccia3/assets/img/background/background-2.png);
+  background-image: url(/dgBelluccia3/assets/img/background/background-10.png);
   padding: 50px;
   background-position-x: center;
   background-position-y: top;
@@ -1300,11 +1344,10 @@ section {
 # Pricing
 --------------------------------------------------------------*/
 .pricing {
-  background-image: url(/dgBelluccia3/assets/img/background/background-12.jpg);
+  background-image: url(/dgBelluccia3/assets/img/background/background-3.png);
   padding: 20px;
   background-position-x: center;
   background-position-y: top;
-  background-size: cover;
 }
 
 .pricing .content h2 { 
