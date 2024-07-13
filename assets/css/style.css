@@ -475,7 +475,7 @@ p {
 #hero {
   min-height: 100vh;
   /* TODO: Cambia url del fondo con la nueva imagen */
-  background-image: url('/dgBelluccia3/assets/img/background/background-hero.png');
+  background-image: url('/dgBelluccia3/assets/img/background/background-hero2.jpg');
   text-align: center;
   background-size: cover;
   display: flex;
@@ -483,12 +483,13 @@ p {
 }
 
 #hero .container {
-  padding-top: 0px;
-  padding-bottom: 220px;
+  padding-top: 20px;
+  padding-bottom: 235px;
 }
 
 #hero h1 {
   margin: 0;
+  padding-bottom: 20px;
   line-height: 56px;
   color: #3b4ef8;
   
@@ -497,7 +498,8 @@ p {
 #hero h2 {
   margin: 0px 0 0 0;
   color: #2d405f;
-  padding-top: 18 px;
+  padding-top: 12 px;
+  padding-bottom: 15px;
 }
 
 #hero .btn-get-started {
@@ -559,7 +561,7 @@ section {
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 40px;
   margin-top: 30px;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -620,6 +622,8 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  padding-left: 170px;
+  padding-right: 170px;
 }
 
 .section-title h4 {
@@ -715,10 +719,11 @@ section {
   background: #FEEF87;
   padding: 15px 0;
   text-align: center;
+  background-size: 40vh;
 }
 
 .clients img {
-  max-width: 45%;
+  max-width: 52%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
@@ -738,7 +743,7 @@ section {
 # Features
 --------------------------------------------------------------*/
 .features .content+.content {
-  margin-top: 30px;
+  margin-top: 60px;
   padding-bottom: 60px;
   padding-right: 0px;
 }
@@ -763,6 +768,11 @@ section {
   margin-bottom: 100;
   padding-right: 60px;
   padding-left: 0px;
+  padding-top: 10px;
+}
+
+.features .content h3 {
+  padding-top: 40px;
 }
 
 .features .content h2 {
@@ -770,17 +780,39 @@ section {
   margin-bottom: 30px;
 }
 
+.features .content {
+padding-top: 30px;
+}
+
+.text-container {
+  position: relative;
+  text-align: center;
+  color: white; /* Ajusta el color del texto según sea necesario */
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold; /* Ajusta el grosor del texto según sea necesario */
+}
+
 /*--------------------------------------------------------------
 # Steps
 --------------------------------------------------------------*/
 #steps-text {
   background-color: #fff;
+  height: 40vh;
 }
 
 #steps-rest{
+  padding-top: 45px;
   padding-bottom: 20px;
   background-color: #5e69ff;
   width: 100%;
+  height: 35vh;
 }
 
 .steps .row {
@@ -788,10 +820,11 @@ section {
 }
 
 .steps .content-item {
-  padding: 40px;
+  padding-top: 80px;
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin: -1px;
+  height: 40vh;
 }
 
 #steps-rest .content-item{
@@ -861,11 +894,15 @@ section {
   background: #fff9e1;
   background-image: url("/dgBelluccia3/assets/img/background/background-1.png");
   padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services .section-title h2,
 .services .section-title p {
   color: #2D405F;
+  padding-left: 170px;
+  padding-right: 170px;
 }
 
 .services .section-title h2::after {
@@ -1116,10 +1153,11 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  background-image: url(/dgBelluccia3/assets/img/background/background-2.png);
+  background-image: url(/dgBelluccia3/assets/img/background/background-14.png);
   padding: 50px;
   background-position-x: center;
   background-position-y: top;
+  background-size: cover;
 }
 
 
@@ -1211,7 +1249,9 @@ section {
 }
 
 #team-centro {
-  background-image: url(/dgBelluccia3/assets/img/background/background-9.png);
+  background-image: url(/dgBelluccia3/assets/img/background/background-17.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .team .member {
