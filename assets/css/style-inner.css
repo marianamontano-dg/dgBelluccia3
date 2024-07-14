@@ -650,12 +650,12 @@ section {
   font-weight: 700;
   font-size: 34px;
   color: #2D405F;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .about .content p {
   margin-bottom: 10px;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .about .content .about-btn {
@@ -665,7 +665,7 @@ section {
   color: #fff;
   border-radius: 50px;
   transition: 0.3s;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .about .content .about-btn i {
@@ -677,7 +677,11 @@ section {
 }
 
 .about .icon-boxes .icon-box {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.about .icon-boxes .row {
+  padding-top: 68px;
 }
 
 .about .icon-boxes .icon-box i {
@@ -741,12 +745,44 @@ section {
 .features .row.content {
   display: flex;
   flex-direction: row-reverse; /* Invertir el orden de los elementos */
-  height: 65vh;
+  height: 80vh;
 }
 
 .features .col-md-4 img {
-  width: 520px;
-  height: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.features .col-md-5 img {
+  padding-top: 75px;
+  width: 600px;
+  height: 450px;
+}
+
+
+#features h1 {
+  color:#3b4ef8
+}
+
+#features h3{
+  color: #3b4ef8;
+}
+
+.fraunces-bold-50px {
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.features span {
+  position: absolute;
+  top: 10px; /* Ajusta este valor para mover el span verticalmente */
+  left: 205px; /* Ajusta este valor para mover el span horizontalmente */
+  background-color: #ffffff; /* Color de fondo del span */
+  color: #3b4ef8; /* Color del texto del span */
+  padding: 5px 10px; /* Espaciado interno del span */
+  border-radius: 25px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de fuente del span */
 }
 
 .features .content+.content {
@@ -784,6 +820,7 @@ section {
 
 .btn {
   display: inline-block;
+  margin-top: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 14px;
@@ -795,6 +832,7 @@ section {
   border: none;
   border-radius: 25px;
   transition: background-color 0.3s ease;
+  height: 35px;
 }
 
 .btn:hover {
@@ -806,7 +844,7 @@ section {
 --------------------------------------------------------------*/
 #steps-text {
   background-color: #fff;
-  padding-left: 120px;
+  padding-left: 50px;
 }
 
 #steps-rest{
@@ -816,6 +854,7 @@ section {
   background-image: url(/dgBelluccia3/assets/img/background/background-11.jpg);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   width: 100%;
   height: 30vh;
 }
@@ -825,15 +864,20 @@ section {
 }
 
 .steps .content-item {
-  padding: 40px;
-  border-left: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  padding: 50px;
+  border-left: 1px solid #3b4ef8;
+  border-bottom: 1px solid #3b4ef8;
   margin: -1px;
   align-items: center;
+  border-width:  1px solid #3b4ef8;
+}
+
+.steps .col-md-1 .content-item {
+  border-bottom: 1px solid #3b4ef8;
 }
 
 #steps-text .steps .section-bg{
-  padding-left: 180px;
+  padding-left: 130px;
 }
 
 #steps-rest .content-item{
@@ -862,9 +906,9 @@ section {
 }
 
 .steps .content-item h3 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
-  padding: 0;
+  padding-top: 15px;
   margin: 55px 38;
   color: #ffffff;
   width: 950px;
@@ -903,7 +947,15 @@ section {
   padding-bottom: 80px;
 }
 
-.services .section-title h2,
+.services .col-md-6.col-lg-3 {
+  display: flex;
+  align-items: stretch;
+}
+
+.services .section-title h2 {
+  color: #ffffff;
+}
+
 .services .section-title p {
   color: #2D405F;
 }
@@ -916,10 +968,12 @@ section {
   padding: 50px 30px;
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background: #ffffff;
   transition: all 0.3s;
   border-radius: 5px;
   text-align: center;
+  max-height: auto;
+  width: 100%;
 }
 
 .services .icon-box:hover {
@@ -962,6 +1016,29 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+}
+
+.services .btn {
+  width: 164px;
+  height: 35px;
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 491px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fca37e;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff771d;
 }
 
 /*--------------------------------------------------------------
@@ -1166,6 +1243,13 @@ section {
   background-position-y: top;
 }
 
+#testimonials h2 { 
+  color: #ffffff;
+}
+
+#testimonials .opensans-regular-16px {
+  color: #ffffff;
+}
 
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
@@ -1226,6 +1310,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 20px auto;
+  color: #2D405F;
 }
 
 .testimonials .swiper-pagination {
@@ -1728,6 +1813,9 @@ section {
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #fff;
+  background-image: url("/dgBelluccia3/assets/img/background/background-17.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #footer .footer-top .footer-contact {
@@ -1856,7 +1944,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #e7eafe;
-  color: #3b4ef8;
+  color: #ff771d;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1868,7 +1956,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #3b4ef8;
+  background: #ff771d;
   color: #fff;
   text-decoration: none;
 }

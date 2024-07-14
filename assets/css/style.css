@@ -567,47 +567,6 @@ section {
   padding-bottom: 20px;
   position: relative;
 }
-/* Estilos específicos para cada título de subsección */
-.title-subsection1 {
-  color: #2D405F; /* Color naranja para el título de la subsección 1 */
-}
-
-.title-subsection2 {
-  color: #2d405f; /* Color azul oscuro para el título de la subsección 2 */
-}
-
-.title-subsection3 {
-  color: #2D405F; /* Color verde para el título de la subsección 3 */
-}
-
-.title-subsection4 {
-  color: #2D405F; /* Color naranja para el título de la subsección 1 */
-}
-
-.title-subsection5 {
-  color: #2d405f; /* Color azul oscuro para el título de la subsección 2 */
-}
-
-.title-subsection6 {
-  color: #2D405F; /* Color verde para el título de la subsección 3 */
-}
-
-.title-subsection7 {
-  color: #2D405F; /* Color naranja para el título de la subsección 1 */
-}
-
-.title-subsection8 {
-  color: #2d405f; /* Color azul oscuro para el título de la subsección 2 */
-}
-
-.title-subsection9 {
-  color: #2D405F; /* Color verde para el título de la subsección 3 */
-}
-
-.title-subsection10 {
-  color: #ffffff; /* Color verde para el título de la subsección 3 */
-}
-
 
 .section-title h2::after {
   content: "";
@@ -1347,7 +1306,7 @@ padding-top: 30px;
   background-size: cover;
 }
 
-.pricing .content h2 { 
+#pricing h2 { 
   font-weight: 700;
   padding-top: 20px;
   font-size: 32px;
@@ -1725,8 +1684,9 @@ padding-top: 30px;
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #fff;
+  background-image: url("/dgBelluccia3/assets/img/background/background-17.jpg");
 }
-
+ 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
@@ -1853,7 +1813,7 @@ padding-top: 30px;
   font-size: 18px;
   display: inline-block;
   background: #e7eafe;
-  color: #3b4ef8;
+  color: #ff771d;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1865,7 +1825,7 @@ padding-top: 30px;
 }
 
 #footer .social-links a:hover {
-  background: #3b4ef8;
+  background: #ff771d;
   color: #fff;
   text-decoration: none;
 }
