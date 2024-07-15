@@ -715,7 +715,8 @@ section {
 
 @media (max-width: 1200px) {
   .about .content {
-    padding-right: 0;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
 
@@ -851,6 +852,60 @@ section {
   background-color: #ff771d;
 }
 
+@media(max-width:768px){
+  .features{
+    width: 100%;
+    height: 860px;
+  }
+  .features .col-md-5 img {
+    padding-top: 75px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  #features h1{
+    text-align: center;
+  }
+  .features span {
+    position: absolute;
+    top: -20px; /* Ajusta este valor para mover el span verticalmente */
+    left: 145px; /* Ajusta este valor para mover el span horizontalmente */
+    background-color: #ffffff; /* Color de fondo del span */
+    color: #3b4ef8; /* Color del texto del span */
+    padding: 5px 10px; /* Espaciado interno del span */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente del span */
+  }
+  #features h3{
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  
+  #features p {
+    text-align: center;
+  }
+  .features .content ul li {
+    padding-bottom: 0px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  
+  .features .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #3b4ef8;
+  }
+  .features .btn {
+   justify-content: center;
+   display: flex;
+   height: 35px;
+   margin-right: 80px;
+   margin-left: 80px;
+  }
+  
+}
+
 /*--------------------------------------------------------------
 # Steps
 --------------------------------------------------------------*/
@@ -950,6 +1005,44 @@ section {
     padding: 40px 0;
   }
 }
+
+@media (max-width:768px) {
+  .steps .content-item h3 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 15px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+  }
+  #steps-rest .content-item{
+    width: 100%;
+    padding: 20px 40px 0px 40px;
+    border-bottom-width: 1px;
+    text-align: center;
+  
+  }
+  #steps-text {
+    background-color: #fff;
+    padding-right: 45px;
+  }
+  .steps .content-item {
+    padding: 50px;
+    margin: -1px;
+    align-items: center;
+  }
+  .steps .col-md-1 .content-item {
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  #steps-text .steps .section-bg{
+    padding-left: 0px;
+  }
+  
+  
+}
+
+
 
 /*--------------------------------------------------------------
 # Services
@@ -1058,7 +1151,8 @@ section {
 
 @media (max-width: 768px){
   .services .btn {
-    max-width: 40%;
+     margin-left: 110px;
+     margin-right: 120px;
   }
 }
 
@@ -1066,7 +1160,7 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 #portfolio.portfolio {
-  background-image: url("/dgBelluccia3/assets/img/background/background-7.png");
+  background-image: url("/dgBelluccia3/assets/img/background/background-18.jpg");
 }
 
 .portfolio .portfolio-item {
@@ -1351,6 +1445,15 @@ section {
   background-color: #3b4ef8;
 }
 
+@media(max-width:768px){
+.testimonials {
+  background-image: url("/dgBelluccia3/assets/img/background/background-detalle-testimonials.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
