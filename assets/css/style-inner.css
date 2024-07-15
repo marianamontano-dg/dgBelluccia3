@@ -535,11 +535,23 @@ p {
  #hero .hero-img {
     max-width: 100%;
   }
+ #hero .background-img {
+  max-width: 100%;
+ }
 }
 
 @media (max-height: 768px) {
   #hero {
     height: auto;
+  }
+}
+
+@media (min-width:490px) {
+  #hero {
+    background-image: url("/dgBelluccia3/assets/img/background/background-hero-mobile.jpg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 }
 
@@ -1035,10 +1047,19 @@ section {
   border: none;
   border-radius: 25px;
   transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center
 }
 
 .btn:hover {
   background-color: #ff771d;
+}
+
+@media (max-width: 768px){
+  .services .btn {
+    max-width: 40%;
+  }
 }
 
 /*--------------------------------------------------------------
